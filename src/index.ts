@@ -46,6 +46,7 @@ app.use(`/${process.env.name}/:version`, (req, _res, next) => {
   next();
 });
 
+
 //路由
 app.use(`/${process.env.name}/:version`,router);
 
