@@ -1,0 +1,25 @@
+{
+  // 编译选项
+  "compilerOptions": {
+      // 入口目录
+      "rootDir": "./src/",
+      // 出口目录
+      "outDir": "./dist/",
+      // 严格模式
+      "strict": true,
+      // 在函数中未使用的局部变量会报错
+      "noUnusedLocals": true,
+      // 函数中未使用的参数会报错
+      "noUnusedParameters": true,
+      // 函数缺少返回值时会报错
+      "noImplicitReturns": true,
+      // 在 switch 语句中，每个 case 后都需要显式地指定 break、return 或 throw
+      "noFallthroughCasesInSwitch": true,
+      // 允许导入 CommonJS 模块时使用 ES 模块的语法
+      "esModuleInterop": true
+  },
+  // 表示只会编译src下的 .ts 文件
+  "include":["src/**/*", "types/**/*.d.ts"],
+  // 不开启该项, 会出现类型丢失的情况, 因为 ts-node 不主动加载文件.
+  "ts-node": { "files": true }
+}
