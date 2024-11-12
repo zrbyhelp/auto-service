@@ -24,7 +24,7 @@ function getLocalIP() {
           }
       }
   }
-  return ips; // 如果没有找到合适的IP，返回回环地址
+  return ips; 
 }
 
 //初始化环境变量
