@@ -31,7 +31,7 @@ function getLocalIP() {
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 dotenv.config({ path: `.env` });
 const port = parseInt(process.env.port || "3000");
-const host = process.env.host || "http://127.0.0.1";
+const host = process.env.host || "127.0.0.1";
 const consulIp = process.env.consulIp || "127.0.0.1"
 const serviceName = process.env.serviceName||"noneservice"
 const consulProt = parseInt(process.env.consulProt || "8500");
