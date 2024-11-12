@@ -10,8 +10,6 @@ declare global {
 		  success<T>(data?: T): void;
 		  error(message: string): void;
 		}
-		interface Request {
-		}
 	  }
 }
 export {}
